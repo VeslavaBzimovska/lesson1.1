@@ -11,10 +11,18 @@ namespace Variables
         static void Main(string[] args)
         {
             string userName = "a";
-            Console.WriteLine("Hello World!");
+            ShowHelloWorld();
             Console.ReadLine();
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
+            UserAuthorization(userName, name);
+            Console.ReadLine();
+            Pasisveikinimas(userName, name);
+            Console.ReadLine();
+        }
+
+        private static void UserAuthorization(string userName, string name)
+        {
             if (name == userName)
             {
                 Console.WriteLine("Nice to see you {0}", name);
@@ -23,17 +31,22 @@ namespace Variables
             {
                 Console.WriteLine("Unkown user");
             }
-            Console.ReadLine();
+        }
+
+        private static void ShowHelloWorld()
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        private static void Pasisveikinimas (string userName, string name )
+        {
             if (name == userName)
             {
                 string pasisveikinimas = "labas";
                 for (int i = 0; i < 10; i++)
                 {
-                    {
-                        Console.WriteLine(i +1 + ". " + pasisveikinimas);
-                    }
+                    Console.WriteLine(i + 1 + ". " + pasisveikinimas);
                 }
-                Console.ReadLine();
             }
         }
     }
