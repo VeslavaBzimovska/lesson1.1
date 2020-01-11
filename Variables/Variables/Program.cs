@@ -26,9 +26,9 @@ namespace Variables
             if (name == "Veslava")
             {
                 string pasisveikinimas = "labas";
-                for (int i = 0; i < 10; i++)
+                for (int i = 1; i <= 10; i++)
                 {
-                    Console.WriteLine(pasisveikinimas);
+                    Console.WriteLine(i + ". " + pasisveikinimas);
                 }
                 Console.ReadLine();
             }
