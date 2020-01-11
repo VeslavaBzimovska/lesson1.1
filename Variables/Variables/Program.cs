@@ -10,11 +10,12 @@ namespace Variables
     {
         static void Main(string[] args)
         {
+            string userName = "a";
             Console.WriteLine("Hello World!");
             Console.ReadLine();
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
-            if (name == "Veslava")
+            if (name == userName)
             {
                 Console.WriteLine("Nice to see you {0}", name);
             }
@@ -23,7 +24,7 @@ namespace Variables
                 Console.WriteLine("Unkown user");
             }
             Console.ReadLine();
-            if (name == "Veslava")
+            if (name == userName)
             {
                 string pasisveikinimas = "labas";
                 for (int i = 1; i <= 10; i++)
