@@ -12,6 +12,11 @@ namespace Variables
         {
             Console.WriteLine("Hello World!");
             Console.ReadLine();
+            Console.WriteLine("Please enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine(string.Format("Hello {0}", name));
+            Console.ReadLine();
+
         }
     }
 }
