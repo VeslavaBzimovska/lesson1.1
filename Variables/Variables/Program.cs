@@ -23,6 +23,15 @@ namespace Variables
                 Console.WriteLine("Unkown user");
             }
             Console.ReadLine();
+            if (name == "Veslava")
+            {
+                string pasisveikinimas = "labas";
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine(pasisveikinimas);
+                }
+                Console.ReadLine();
+            }
         }
     }
 }
