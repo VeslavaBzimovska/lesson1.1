@@ -14,9 +14,15 @@ namespace Variables
             Console.ReadLine();
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
-            Console.WriteLine(string.Format("Hello {0}", name));
+            if (name == "Veslava")
+            {
+                Console.WriteLine("Nice to see you {0}", name);
+            }
+            else
+            {
+                Console.WriteLine("Unkown user");
+            }
             Console.ReadLine();
-
         }
     }
 }
