@@ -27,9 +27,11 @@ namespace Variables
             if (name == userName)
             {
                 string pasisveikinimas = "labas";
-                for (int i = 1; i <= 10; i++)
+                for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine(i + ". " + pasisveikinimas);
+                    {
+                        Console.WriteLine(i +1 + ". " + pasisveikinimas);
+                    }
                 }
                 Console.ReadLine();
             }
