@@ -17,7 +17,7 @@ namespace Variables
             string name = Console.ReadLine();
             UserAuthorization(userName, name);
             Console.ReadLine();
-            Pasisveikinimas(userName, name);
+            Greetings(userName, name);
             Console.ReadLine();
         }
 
@@ -38,7 +38,7 @@ namespace Variables
             Console.WriteLine("Hello World!");
         }
 
-        private static void Pasisveikinimas (string userName, string name )
+        private static void Greetings (string userName, string name )
         {
             if (name == userName)
             {
